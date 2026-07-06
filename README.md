@@ -12,23 +12,36 @@ VoHive 是一个面向移远 4G 模组的管理平台，适合拿移远 EC20 这
 - 其他需要定期拨打一通电话做保号的海外号码
 
 # 一、适用环境
-硬件
-推荐：
+硬件（推荐）：
 > EC20CEFAG
+
+
 > EC20CEFHLG
+
+
 可以小黄鱼几十块买到
 
 
 要求：
 
 > 设备具备 SIM 卡槽
+
+
 > 或搭配带SIM卡槽的USB底板
 
 
 系统：
+
+
 建议使用 Linux：
+
+
 > Debian / Ubuntu
+
+
 > 树莓派
+
+
 > NAS
 
 
@@ -159,8 +172,9 @@ services:
 docker compose up -d
 ```
 5. 访问后台
+```
 http://你的服务器IP:7575
-
+```
 
 注意：
 
@@ -173,11 +187,23 @@ Docker 部署也要先禁用宿主机 ModemManager
 # 六、机器人常用命令
 
 /list：查看设备列表
+
+
 /sms 设备ID：查看最近短信
+
+
 /send 设备ID 号码 内容：发送短信
+
+
 /rotate 设备ID：切换 IP
+
+
 /esim 设备ID：查看 eSIM profile
+
+
 /switch 设备ID 序号或 ICCID：切换 eSIM profile
+
+
 /vocall 设备ID 号码：发起 VoWiFi 模拟呼叫
 
 # 七、补充说明
