@@ -322,7 +322,7 @@ main() {
   arch="$(detect_arch)"
   resolved_version="$(resolve_version "${VERSION}")"
   asset="vohive_${resolved_version}_linux_${arch}"
-  base="https://github.com/KeyueMiao/vohive_backup/raw/refs/heads/main/${resolved_version}"
+  base="https://github.com/KeyueMiao/vohive_backup/raw/refs/heads/main/vohive_v1.5.4_linux_arm64"
   downloaded="${TMP_DIR}/${asset}"
   extracted="${downloaded}"
 
